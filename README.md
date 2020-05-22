@@ -19,6 +19,8 @@ private Integer myInt1;<br/>
 private Integer myInt2;<br/>
 +getters and setters<br/>
 ---MyConfigurationManualLoader.java<br/>
+@Autowired<br/>
+MyConfigurationManuallyLoadedBean myJsonConf;<br/>
 onApplicationEvent(ApplicationStartedEvent event){<br/>
 ...<br/>
 loadJsonConfigurationIntoBean("myConfiguration1.json", myJsonConf);<br/>
